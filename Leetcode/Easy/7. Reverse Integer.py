@@ -29,7 +29,7 @@ class Solution:
         while xAbs != 0:
             newNUM = newNUM * 10 + xAbs % 10
             xAbs = xAbs //10
-        if x > 2**31 -1:
+        if xAbs > 2**31 -1:
             return 0
         return newNUM if not flag else -newNUM
 
